@@ -1,0 +1,22 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API for shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristodemus101/store.git"
+  },
+  "author": "Divyaansh Mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aristodemus101/store/issues"
+  },
+  "homepage": "https://github.com/aristodemus101/store#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
