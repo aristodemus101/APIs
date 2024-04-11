@@ -9,7 +9,7 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect(
-    "mongodb+srv://divyaanshmehta513:mongodb123@cluster0.mtretz3.mongodb.net/"
+    'mongodb+srv://divyaanshmehta513:mongodb123@cluster0.mtretz3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 );
 
 app.use(morgan('dev'));
@@ -40,7 +40,9 @@ app.use((error,req,res,next)=>{
         error:{
             message: error.message
         }
-    })
+    });
+}
+)
 
 
 app.use((req,res,next) => {
@@ -51,4 +53,4 @@ app.use((req,res,next) => {
 
 });
 
-module.exports = app
+module.exports = app;
